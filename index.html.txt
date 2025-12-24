@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bartender & Bar Connect V1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bartender & Bar Connect</h1>
+  </header>
+
+  <main>
+    <div id="job-card" class="card">
+      <h2 id="job-title">Friday Night Shift</h2>
+      <p id="job-bar">Bar: Midnight Lounge</p>
+      <p id="job-pay">Pay: $250</p>
+      <p id="job-hours">8pm – 2am</p>
+      <p id="job-location">Location: Downtown</p>
+      <p id="job-notes">Notes: Casual dress code</p>
+    </div>
+
+    <div class="buttons">
+      <button id="decline">❌ Decline</button>
+      <button id="accept">✅ Accept</button>
+    </div>
+
+    <section id="matches">
+      <h3>Matches</h3>
+      <ul id="match-list"></ul>
+    </section>
+
+    <section id="messages">
+      <h3>Message</h3>
+      <input type="text" id="msg-input" placeholder="Type message">
+      <button id="send-msg">Send</button>
+      <ul id="msg-list"></ul>
+    </section>
+
+    <section id="ratings">
+      <h3>Rate Bartender</h3>
+      <select id="rating">
+        <option value="">Select stars</option>
+        <option value="1">⭐</option>
+        <option value="2">⭐⭐</option>
+        <option value="3">⭐⭐⭐</option>
+        <option value="4">⭐⭐⭐⭐</option>
+        <option value="5">⭐⭐⭐⭐⭐</option>
+      </select>
+      <textarea id="rating-comment" placeholder="Optional feedback"></textarea>
+      <button id="submit-rating">Submit Rating</button>
+      <ul id="ratings-list"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
